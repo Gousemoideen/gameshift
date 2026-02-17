@@ -26,14 +26,14 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-4">
           {/* Live Event badge - enlarged for emphasis */}
-          <div className="flex items-center gap-2 px-4 py-2.5 bg-black/60 border-2 border-retro-gold/70 rounded-md">
-            <span className="w-2 h-2 bg-red-500 animate-pulse"></span>
-            <span className="text-sm md:text-base uppercase text-retro-gold tracking-[0.25em] font-retro">
+          <div className="flex items-center gap-2 px-3 py-2 bg-black/60 border-2 border-retro-gold/70 rounded-md">
+            <span className="w-2.5 h-2.5 bg-red-500 animate-pulse"></span>
+            <span className="text-base md:text-lg uppercase text-retro-gold tracking-[0.25em] font-retro">
               LIVE EVENT
             </span>
           </div>
           {/* Placeholder container for menu (three bars) */}
-          <div className="w-10 h-10 rounded-md border-2 border-white/30 bg-black/40 flex items-center justify-center shadow-[0_0_14px_rgba(255,255,255,0.25)]">
+          <div className="w-10 h-10 rounded-md border-2 border-white/30 bg-black/40 flex items-center justify-center">
             <Link href="/menu" className="material-symbols-outlined text-white hover:text-retro-gold transition-colors">
               menu
             </Link>
@@ -44,10 +44,10 @@ export default function Home() {
       {/* Main Content */}
       <main className="flex-1 flex flex-col items-center justify-center px-6 relative z-10 py-10">
         {/* Floating Icons */}
-        <div className="absolute top-[15%] left-[5%] text-4xl animate-[float_4s_ease-in-out_infinite] opacity-80" title="Key">🗝️</div>
-        <div className="absolute top-[20%] right-[8%] text-3xl animate-[float_4s_ease-in-out_2s_infinite] opacity-80" title="Potion">🧪</div>
-        <div className="absolute bottom-[25%] left-[8%] text-3xl animate-[float_4s_ease-in-out_2s_infinite] opacity-80" title="Chest">💎</div>
-        <div className="absolute bottom-[30%] right-[5%] text-4xl animate-[float_4s_ease-in-out_infinite] opacity-80" title="Crystal">🔮</div>
+        <div className="absolute top-[13%] left-[1%] text-4xl animate-[float_4s_ease-in-out_infinite] opacity-80" title="Key">🗝️</div>
+        <div className="absolute top-[20%] right-[1%] text-3xl animate-[float_4s_ease-in-out_2s_infinite] opacity-80" title="Potion">🧪</div>
+        <div className="absolute bottom-[19%] left-[5%] text-3xl animate-[float_4s_ease-in-out_2s_infinite] opacity-80" title="Diamond">💎</div>
+        <div className="absolute bottom-[23%] right-[-3%] text-4xl animate-[float_4s_ease-in-out_infinite] opacity-80" title="Magic Wizard Globe">🔮</div>
 
         {/* Hero Section */}
         <div className="relative mb-12 transform scale-100 md:scale-110">
