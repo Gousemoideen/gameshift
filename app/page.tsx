@@ -25,11 +25,19 @@ export default function Home() {
           <span className="text-sm md:text-base tracking-widest text-white pixel-text-shadow">VERSE</span>
         </div>
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2 px-3 py-2 bg-black/40 border-2 border-retro-gold/50">
+          {/* Live Event badge - enlarged for emphasis */}
+          <div className="flex items-center gap-2 px-4 py-2.5 bg-black/60 border-2 border-retro-gold/70 rounded-md">
             <span className="w-2 h-2 bg-red-500 animate-pulse"></span>
-            <span className="text-[8px] md:text-[10px] uppercase text-retro-gold tracking-widest font-retro text-lg">LIVE EVENT</span>
+            <span className="text-sm md:text-base uppercase text-retro-gold tracking-[0.25em] font-retro">
+              LIVE EVENT
+            </span>
           </div>
-          <button className="material-symbols-outlined text-white hover:text-retro-gold transition-colors">menu</button>
+          {/* Placeholder container for menu (three bars) */}
+          <div className="w-10 h-10 rounded-md border-2 border-white/30 bg-black/40 flex items-center justify-center shadow-[0_0_14px_rgba(255,255,255,0.25)]">
+            <Link href="/menu" className="material-symbols-outlined text-white hover:text-retro-gold transition-colors">
+              menu
+            </Link>
+          </div>
         </div>
       </header>
 
