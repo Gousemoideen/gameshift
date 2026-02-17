@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function BottomNav() {
     return (
-        <div className="fixed bottom-6 left-0 right-0 z-50 flex justify-center">
+        <footer className="w-full flex justify-center mt-auto pt-6 pb-6">
             <div className="w-[360px] bg-[#1a0b2e]/95 backdrop-blur-xl border border-white/20 rounded-2xl px-6 py-4 relative shadow-2xl">
 
                 {/* Play Button - Floating in center */}
@@ -36,6 +36,6 @@ export default function BottomNav() {
                     </Link>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }

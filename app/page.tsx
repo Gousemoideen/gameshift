@@ -4,7 +4,7 @@ import BottomNav from "@/components/BottomNav";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen flex flex-col overflow-x-hidden bg-[linear-gradient(to_bottom,#1a0b2e_0%,#4a1c6e_100%)] pb-28">
+    <div className="relative min-h-screen flex flex-col overflow-x-hidden bg-[linear-gradient(to_bottom,#1a0b2e_0%,#4a1c6e_100%)]">
       {/* Stars Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         <div className="star top-[10%] left-[15%] animate-[twinkle_3s_infinite]" style={{ animationDelay: "0s" }}></div>
