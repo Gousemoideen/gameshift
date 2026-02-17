@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BottomNav from "@/components/BottomNav";
 
 export default function Home() {
   return (
@@ -46,12 +47,12 @@ export default function Home() {
         {/* Floating Icons */}
         <div className="absolute top-[13%] left-[1%] text-4xl animate-[float_4s_ease-in-out_infinite] opacity-80" title="Key">🗝️</div>
         <div className="absolute top-[20%] right-[1%] text-3xl animate-[float_4s_ease-in-out_2s_infinite] opacity-80" title="Potion">🧪</div>
-        <div className="absolute bottom-[19%] left-[5%] text-3xl animate-[float_4s_ease-in-out_2s_infinite] opacity-80" title="Diamond">💎</div>
-        <div className="absolute bottom-[23%] right-[-3%] text-4xl animate-[float_4s_ease-in-out_infinite] opacity-80" title="Magic Wizard Globe">🔮</div>
+        <div className="absolute bottom-[26%] left-[5%] text-3xl animate-[float_4s_ease-in-out_2s_infinite] opacity-80" title="Diamond">💎</div>
+        <div className="absolute bottom-[30%] right-[-3%] text-4xl animate-[float_4s_ease-in-out_infinite] opacity-80" title="Magic Wizard Globe">🔮</div>
 
-        {/* Hero Section */}
+        {/* Hero Section - main game card with thin neon white frame */}
         <div className="relative mb-12 transform scale-100 md:scale-110">
-          <div className="bg-verse-light/20 p-2 rounded-lg backdrop-blur-sm border-4 border-white pixel-border shadow-[0_0_50px_rgba(157,78,221,0.5)]">
+          <div className="bg-white/5 p-2 rounded-lg backdrop-blur-sm border border-white shadow-[0_0_15px_rgba(255,255,255,0.8),0_0_30px_rgba(255,255,255,0.6),0_0_45px_rgba(255,255,255,0.4)]">
             <div className="bg-verse-purple/80 p-8 md:p-12 border-4 border-verse-dark flex flex-col items-center justify-center gap-4 min-w-[280px]">
               <div className="w-24 h-24 mb-2 relative">
                 <div className="absolute inset-0 bg-retro-gold/20 blur-xl rounded-full"></div>
@@ -99,18 +100,18 @@ export default function Home() {
         </div>
 
         {/* Buttons */}
-        <div className="w-full max-w-sm flex flex-col gap-4">
-          <Link href="/login" className="w-full py-4 bg-retro-blue text-white text-sm uppercase tracking-widest pixel-btn hover:bg-retro-blue/90 transition-all border-2 border-white/20 text-center">
+        <div className="w-full max-w-sm flex flex-col gap-4 mb-24">
+          <Link href="/login" className="w-full py-4 bg-retro-blue text-white text-sm uppercase tracking-widest pixel-btn hover:bg-retro-blue/90 transition-all border-2 border-white/20 text-center shadow-[0_0_15px_rgba(37,99,235,0.5)]">
             Start Game
           </Link>
-          <button className="w-full py-4 bg-verse-purple/60 backdrop-blur-md text-white text-sm uppercase tracking-widest pixel-btn hover:bg-verse-purple/80 transition-all border-2 border-white/20">
+          <button className="w-full py-4 bg-verse-purple/60 backdrop-blur-md text-white text-sm uppercase tracking-widest pixel-btn hover:bg-verse-purple/80 transition-all border-2 border-white/20 shadow-[0_0_15px_rgba(123,31,162,0.5)]">
             High Scores
           </button>
         </div>
       </main>
 
-      {/* Footer Gradient */}
-      <div className="fixed bottom-0 left-0 right-0 h-32 opacity-30 pointer-events-none -z-10 bg-repeat-x" style={{ backgroundImage: "linear-gradient(to top, #2a0a40 0%, transparent 100%)" }}></div>
+      <BottomNav />
+
     </div>
   );
 }
