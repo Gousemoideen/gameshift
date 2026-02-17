@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen flex flex-col overflow-x-hidden bg-[linear-gradient(to_bottom,#1a0b2e_0%,#4a1c6e_100%)]">
+    <div className="relative min-h-screen flex flex-col overflow-x-hidden bg-[linear-gradient(to_bottom,#1a0b2e_0%,#4a1c6e_100%)] pb-28">
       {/* Stars Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         <div className="star top-[10%] left-[15%] animate-[twinkle_3s_infinite]" style={{ animationDelay: "0s" }}></div>
@@ -91,7 +91,7 @@ export default function Home() {
         </div>
 
         {/* Buttons */}
-        <div className="w-full max-w-sm flex flex-col gap-4 mb-24">
+        <div className="w-full max-w-sm flex flex-col gap-4">
           <Link href="/login" className="w-full py-4 bg-retro-blue text-white text-sm uppercase tracking-widest pixel-btn hover:bg-retro-blue/90 transition-all border-2 border-white/20 text-center">
             Start Game
           </Link>
@@ -100,33 +100,6 @@ export default function Home() {
           </button>
         </div>
       </main>
-
-      {/* Navigation */}
-      <nav className="fixed bottom-4 left-4 right-4 bg-verse-dark/90 border-2 border-white/20 rounded-xl px-2 py-3 z-30 shadow-2xl backdrop-blur-xl">
-        <div className="flex items-center justify-around">
-          <a className="flex flex-col items-center gap-1 text-retro-gold" href="#">
-            <span className="material-symbols-outlined text-2xl">cottage</span>
-            <span className="text-[8px] font-sans uppercase tracking-wider">Base</span>
-          </a>
-          <a className="flex flex-col items-center gap-1 text-white/40 hover:text-white transition-colors" href="#">
-            <span className="material-symbols-outlined text-2xl">sports_esports</span>
-            <span className="text-[8px] font-sans uppercase tracking-wider">Quests</span>
-          </a>
-          <div className="relative -top-8">
-            <button className="bg-gradient-to-b from-retro-blue to-blue-700 w-14 h-14 rounded-full border-4 border-verse-dark shadow-lg flex items-center justify-center text-white hover:scale-105 transition-transform">
-              <span className="material-symbols-outlined text-3xl">play_arrow</span>
-            </button>
-          </div>
-          <a className="flex flex-col items-center gap-1 text-white/40 hover:text-white transition-colors" href="#">
-            <span className="material-symbols-outlined text-2xl">leaderboard</span>
-            <span className="text-[8px] font-sans uppercase tracking-wider">Rank</span>
-          </a>
-          <a className="flex flex-col items-center gap-1 text-white/40 hover:text-white transition-colors" href="#">
-            <span className="material-symbols-outlined text-2xl">account_circle</span>
-            <span className="text-[8px] font-sans uppercase tracking-wider">Hero</span>
-          </a>
-        </div>
-      </nav>
 
       {/* Footer Gradient */}
       <div className="fixed bottom-0 left-0 right-0 h-32 opacity-30 pointer-events-none -z-10 bg-repeat-x" style={{ backgroundImage: "linear-gradient(to top, #2a0a40 0%, transparent 100%)" }}></div>
