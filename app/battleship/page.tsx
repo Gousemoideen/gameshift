@@ -188,7 +188,7 @@ export default function BattleshipPage() {
                 </div>
             </main>
 
-            
+
         </div>
     );
 }
